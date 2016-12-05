@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="foundation.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Simon Says Game</title>
+        <meta charset="utf-8">
+         <!-- 
+        
+        CREDITS TO:
+        
+        A. MORTIMER -WEB DESIGN TEACHER
+        
+        GEO1088 -HEAD JAVASCRIPT NINJA
+        
+        JUSTII -HEAD DESIGNER AND CREATOR
+        
+        C. DONNOVAN -JAVASCRIPT SEMI-NINJA
+        
+        W3SCHOOLS -PROVIDED MODAL CODE
+        
+        -->
+    </head>
+    <body>
+        <br/><br/>
+        <div class="row">
+            <div class="small-1 columns id" id="unique">
+                <div id="myBtn">How to Play</div>
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close">×</span>
+                        <p>How to play:
+                                    <br/>-Each round a sequence of the boxes will light up.
+                                    <br/>-Wait for all the boxes to light up in order.
+                                    <br/>-Click the boxes in the correct order as they appeared.
+                                    <br/>-If you get the order wrong it will be Game Over
+                                    <br/>-Click "Start" to begin!
+                                </p>
+                      </div>
+                    </div>
+                    <br/>
+                    <div id="muteButton">
+                        <!--Use javascript to put the innerHTML image here, for now use this-->
+                        <img src="" alt="Mute Sound Button" title="Mute" id="muteImage"/>
+                    </div>
+            </div>
+            <div class="small-1 columns height" id="roundNumber">
+                <!-- round number placed here by script-->
+            </div>
+            <div class="small-4 columns height" id="red">
+                <!--Red[0]-->
+            </div>
+            <div class="small-4 columns height small-pull-2" id="yellow">
+                <!--Yellow[1]-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-4 columns small-offset-2 height" id="blue">
+                <!--Blue[2]-->
+            </div>
+            <div class="small-4 columns height" id="green">
+                <!--Green[3]-->
+            </div>
+            <div class="small-1 columns height small-pull-1" id="waitGo">
+                <!--"Wait" and "Go" displayed here-->
+            </div>
+        </div>
+        <br/><br/>
+        <div class="row" id="gameStartRow">
+            <div class="small-2 columns small-push-5" id="startButton" onclick="gameStart(); hideInstructions()">
+                Start
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
